@@ -1,3 +1,15 @@
 html {
-  background-color: #009f74;
+  background-color: #02271d;
+}
+
+.winner {
+  color: green;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.loser {
+  color: red;
+  margin-top: 30px;
+  text-align: center;
 }

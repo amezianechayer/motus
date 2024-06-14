@@ -2,6 +2,22 @@
     color: white;
 }
 
+.background-yellow {
+    background-color: rgb(181, 159, 59);
+}
+
+.background-red {
+    background-color: #a00d0d;
+}
+
+.background-blue {
+    background-color: #3b5fef;
+}
+
+.background-green {
+    background-color: #02271d;
+}
+
 .grid-container {
     margin-top: 50px;
     display: flex;
@@ -20,10 +36,21 @@
             flex-direction: row;
 
             .title {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin: 2.5px;
                 height: 50px;
                 width: 50px;
                 border: 2px solid #565758;
+                color: white;
+                font-size: 2rem;
+                line-height: 2rem;
+                font-size: 32px;
+                font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
             }
         }
     }

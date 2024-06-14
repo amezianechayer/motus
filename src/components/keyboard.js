@@ -1,6 +1,6 @@
 import "./keyboard.scss";
 
-export default function Keyboard() {
+export default function Keyboard(props) {
   const characterRows = [
     ["A", "Z", "E", "R", "T", "Y", "U", "I", "O", "P"],
     ["Q", "S", "D", "F", "G", "H", "J", "K", "L", "M"],
@@ -14,7 +14,11 @@ export default function Keyboard() {
           <div className="row-container" key={i}>
             {row.map((character, j) => {
               return (
-                <div className="keyword-button" key={j}>
+                <div 
+                  className="keyword-button" 
+                  key={j}
+                  onClick={() => props.onKeyPress(character)}
+                  >
                   {character}
                 </div>
               );
